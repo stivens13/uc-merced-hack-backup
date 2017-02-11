@@ -10,5 +10,5 @@ fs.readFile("time.txt", {}, (err, data) => {
     if (err) {
         console.log(err);
     }
-    console.log(data)
+    console.log(data.toString())
 })
