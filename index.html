@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body> 
+    <!-- DeliveRC-->
+    <div class="container has-text-centered">
+      <h1>DeliveRC</h1>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column"> 
+          <div class="box box1"><img class="itemImg" src="./assets/BurgerIcon.png">
+            <div class="columns">
+              <div class="column has-text-centered">Burger</div>
+            </div>
+            <div class="columns">
+              <div class="column is-2">
+                <div class="button minus" id="burgerMinus">-</div>
+              </div>
+              <div class="column is-8 has-text-centered"><span class="count" id="burgerCount">0</span></div>
+              <div class="column is-2 plus">
+                <div class="button" id="burgerPlus">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column"> 
+          <div class="box box2"><img class="itemImg" src="./assets/WaterIcon.png">
+            <div class="columns">
+              <div class="column has-text-centered">Water</div>
+            </div>
+            <div class="columns">
+              <div class="column is-2">
+                <div class="button minus" id="waterMinus">-</div>
+              </div>
+              <div class="column is-8 has-text-centered"><span class="count waterCount" id="waterCount">0</span></div>
+              <div class="column is-2 plus"> 
+                <div class="button" id="waterPlus">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column"> 
+          <div class="box box3"><img class="itemImg" src="./assets/SodaIcon.png">
+            <div class="columns">
+              <div class="column has-text-centered">Soda</div>
+            </div>
+            <div class="columns">
+              <div class="column is-2">
+                <div class="button minus" id="sodaMinus">-</div>
+              </div>
+              <div class="column is-8 has-text-centered"><span class="count sodaCount" id="sodaCount">0</span></div>
+              <div class="column is-2"> 
+                <div class="button plus" id="sodaPlus">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-12 has-text-centered">
+          <div class="button is-offset-one-quarter" id="start">Start</div>
+        </div>
+      </div>
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/order.js"></script>
+    </div>
+  </body>
+</html>
