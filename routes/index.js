@@ -12,6 +12,9 @@ module.exports = function(io) {
       res.render('index',{title: ""});
     });
 
+    router.get('/home', function(req, res, next){
+      res.render('home');
+    });
     // router.post('/',function(req, res, next) {
     //   var response = req.body;
     //   setSteeringAngle(response.angle);
@@ -27,6 +30,12 @@ module.exports = function(io) {
     board.on("ready", function() {
       servo = new five.Servo({
         pin: 9
+      });
+      esc = new five.ESC({
+        pin: 10
+      });
+      this.repl.inject({
+        e: esc
       });
       // console.log("hello");
     });
